@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.9.11" method="upgrade">
+
+	<name>Intrum</name>
+	<!-- Следующие элементы необязательны -->
+	<creationDate>Сентябрь 2019</creationDate>
+	<author>VS</author>
+	<authorEmail>info@vsproger.ru</authorEmail>
+	<authorUrl>https://vsproger.ru</authorUrl>
+	<!--  Версия записывается в таблицу компонентов -->
+	<version>0.0.5</version>
+	<!-- Описание необязательно -->
+	<description>Компонент для работы с API Intrum</description>
+
+	<!-- Запускается при обновлении -->
+	<update>
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+
+	<!-- Раздел основных файлов сайта -->
+	<!-- Обратите внимание на значение аттрибута folder: Этот аттрибут описывает папку нашего пакета-установщика из которой должны копироваться файлы. 
+	Поэтому указанные в этом разделе файлы будут скопированы из папки /site/ нашего пакета-установщика в соответствующую папку установки. -->
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>controller.php</filename>
+		<filename>intrum.php</filename>
+		<folder>models</folder>
+		<folder>views</folder>
+	</files>
+
+	<!-- Администрирование -->
+	<administration>
+		<!-- Раздел Меню -->
+		<menu>Intrum</menu>
+		<!-- Раздел основных файлов администрирования  -->
+		<!-- Обратите внимание на значение аттрибута folder: Этот аттрибут описывает папку нашего пакета-установщика из которой должны копироваться файлы. 
+		Поэтому указанные в этом разделе файлы будут скопированы из папки /admin/ нашего пакета-установщика в соответствующую папку установки. -->
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>intrum.php</filename>
+			<folder>sql</folder>
+		</files>
+	</administration>
+
+</extension>

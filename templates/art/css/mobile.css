@@ -1,0 +1,193 @@
+@media screen and (max-width: 1200px){
+    body, .nav-collapse, .header-inner, .content, .container, .on-footer-in{
+        width: 100%;
+    }
+    .widget-vk{
+        display: none;
+    }
+    .navigation .nav {
+        right: 20px;
+    }
+    .header-inner {
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    .foot1, .foot2, .foot3, .foot4 {
+        margin: 0;
+    }
+    .on-footer {
+        height: auto;
+        padding: 10px;
+    }
+    .on-footer-in .custom{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .footer {
+        padding: 10px;
+    }
+    .footer .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .item-main {
+        padding: 20px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .contact-block {
+        margin: 40px 20px;
+    }
+}
+@media screen and (max-width: 980px){
+    .sidebar1{
+        position: fixed;
+        background: #fff;
+        z-index: 99999999;
+        box-shadow: 3px 0px 10px #3a3a3a;
+        top: 0;
+        padding-right: 0 !important;
+        padding-left: 0;
+        height: 100%;
+        overflow: visible;
+        left: -289px;
+        width: 288px !important;
+    }
+    .left-open{
+        height: 60px;
+        width: 60px;
+        right: -61px;
+        position: absolute;
+        display: block;
+        top: 50%;
+        overflow: hidden;
+    }
+    .scroll-block{
+        overflow-y: scroll;
+        height: 100%;
+        margin: 0 -1px 0 0px;
+        bottom: 0;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    .krug-open{
+        width: 65px;
+        height: 55px;
+        background: linear-gradient(to right bottom, #9e9e9e, #fbfbfb);
+        /* border-radius: 50%; */
+        margin-left: -27px;
+        position: relative;
+        border: 1px solid #8a8a8a;
+        box-shadow: 0px 0px 3px #2b2b2b;
+        cursor: pointer;
+        border-radius: 0px 3px 3px 0px;
+    }
+    .krug-open img{
+        position: absolute;
+        right: 7px;
+        height: 34px;
+        top: 11px;
+    }
+    .sidebar-nav:after{
+        content: none;
+    }
+    #sidebar {
+        margin-top: 0;
+    }
+    .row-fluid .span9 {
+        width: 100%;
+        margin-left: 0;
+    }
+    .row-fluid .span3{
+        width: 100%;
+    }
+    .sidebar-nav .nav:before{
+        content: none;
+    }
+    .rotate-arrow{
+        transform: rotate(180deg);
+    }
+    .banner {
+        height: auto;
+    }
+    .item-block {
+        margin: 30px 20px;
+    }
+    .page-header {
+        margin: 20px 20px 30px;
+    }
+    .contacts, .map {
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 760px){
+    .adresses, .social{
+        display: none;
+    }
+    .item-block {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .item-block>div{
+        margin: 10px;
+    }
+    .teaser-image {
+        order: -1;
+    }
+    .teaser-info {
+        width: auto;
+        padding: 0;
+    }
+    .contact-block img{
+        display: none;
+    }
+    .contacts, .map{
+        width: 95%;
+        margin: 0 auto;
+        display: block;
+    }
+}
+@media screen and (max-width: 480px){
+    .header {
+        position: fixed;
+        background: #fff;
+        width: 100%;
+    }
+    .tel{
+        display: none;
+    }
+    .logo img {
+        height: 60px;
+    }
+    .call {
+        display: block;
+        background: url(/images/k-tel.png) no-repeat;
+        height: 50px;
+        width: 50px;
+    }
+    body{
+        margin-top: 120px;
+    }
+    .header{
+        top: 0;
+    }
+    .header-inner, .header {
+        height: 80px;
+    }
+    .home-categories{
+        flex-wrap: wrap;
+    }
+    .home-category{
+        width: 100%;
+        margin: 20px;
+    }
+    .contact-block {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .contact-block p {
+        margin: 0 20px 10px;
+    }
+}

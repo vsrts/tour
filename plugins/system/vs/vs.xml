@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.0" type="plugin" group="system" method="upgrade">
+	<name>VS library</name>
+	<author>Vyacheslav Safin</author>
+	<creationDate>19.09.2019</creationDate>
+	<copyright>Copyright (C) 2019 Vyacheslav Safin. All rights reserved.</copyright>
+	<license>GNU General Public License version 1 or later.</license>
+	<authorEmail>info@vsproger.ru</authorEmail>
+	<authorUrl>https://vsproger.ru</authorUrl>
+	<version>1.0.0</version>
+	<description>Plugin to register VS library.</description>
+
+	<files>
+		<filename plugin="vs">vs.php</filename>
+		<filename>index.html</filename>
+	</files>
+</extension>
