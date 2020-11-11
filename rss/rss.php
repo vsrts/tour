@@ -40,7 +40,12 @@ foreach($list['list'] as $item){
     $tourName = $item['name'];
     $tourlink = 'http://3334333.ru/tury.html?view=item&id=' . $item['id'];
     $tourlinkFormatted = htmlspecialchars($tourlink);
-    $tourDesc = htmlspecialchars($item['field'][83]['value']);
+    $tourPhoto = '&lt;img src="' . $item['field'][89]['value'] . '" /&gt; ';
+    $tourDesc = $tourPhoto . htmlspecialchars($item['field'][83]['value']);
+
+//    echo "<pre>";
+//print_r($tourPhoto);
+//echo "</pre>";
     $feed->addItem($tourName, $tourlinkFormatted, $tourDesc, '', new DateTime());
 }
 
