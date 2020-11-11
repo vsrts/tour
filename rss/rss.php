@@ -32,9 +32,6 @@ foreach ($list['list'] as $key => $item) {
     }
     unset($list[$key]['fields']);
 }
-//echo "<pre>";
-//print_r($list);
-//echo "</pre>";
 
 foreach($list['list'] as $item){
     $tourName = $item['name'];
@@ -43,9 +40,6 @@ foreach($list['list'] as $item){
     $tourPhoto = '&lt;img src="' . $item['field'][89]['value'] . '" /&gt; ';
     $tourDesc = $tourPhoto . htmlspecialchars($item['field'][83]['value']);
 
-//    echo "<pre>";
-//print_r($tourPhoto);
-//echo "</pre>";
     $feed->addItem($tourName, $tourlinkFormatted, $tourDesc, '', new DateTime());
 }
 
