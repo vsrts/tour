@@ -34,10 +34,13 @@ foreach ($list['list'] as $key => $item) {
 }
 
 foreach($list['list'] as $item){
+    if(!$item['field'][622]['value']){
+        continue;
+    }
     $tourName = $item['name'];
     $tourlink = 'http://3334333.ru/tury.html?view=item&id=' . $item['id'];
     $tourlinkFormatted = htmlspecialchars($tourlink);
-    $tourPhoto = '&lt;img src="' . $item['field'][89]['value'] . '" /&gt; ';
+    $tourPhoto = '<img src="' . $item['field'][89]['value'] . '" /> ';
     $tourDesc = $tourPhoto . htmlspecialchars($item['field'][83]['value']);
 
     $feed->addItem($tourName, $tourlinkFormatted, $tourDesc, '', new DateTime());
